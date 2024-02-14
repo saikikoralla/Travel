@@ -1,0 +1,43 @@
+###
+
+User Roles :
+Admin - 
+
+## Sign Up :- http://localhost:8000/api/packages
+
+## Login :- http://localhost:8000/login/<id:type>
+
+            type : admin or user
+
+---------ADMIN------------
+
+## Add new Packages :- http://localhost:8000/api/packages
+ADMIN: GET POST
+USER : GET 
+get data out:
+[
+
+    {
+        "package_id": 1,
+        "package_name": "tirupati",
+        "description": "aasdfadsf",
+        "duration_in_days": 2,
+        "price_per_person": "1000.00",
+        "start_date": "2024-02-15",
+        "end_date": "2024-02-22",
+        "available_slots": 4234
+    },
+]
+
+post data format:
+{
+    "package_name": "",
+    "description": "",
+    "start_date": null,
+    "end_date": null
+}
+
+## view Packages :- http://localhost:8000/api/packages ---- active packages
+USER: READ
+
+Delete Old Plan, check the registered members on a posted plan. User - SIgnup, Login, Visit upcoming posted Plans, Register for plan, exit/deregister from plan, see plans he’s registered for.

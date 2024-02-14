@@ -1,0 +1,71 @@
+
+get  http://127.0.0.1:8000/user/127.0.0.1:8000/user/1 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODk2NzIzLCJpYXQiOjE3MDc4MDg1MjMsImp0aSI6ImE4OWVhYzZiZmY3MzRiYzFhNjk2OTU0ZDMwZDdmZDcyIiwidXNlcl9pZCI6MTN9.2mnLzibzVdMu3G9uYwUEb1pEff8m7wzEi_5sQxjN8bQ
+
+{
+    "no_of_persons":4
+}
+
+###
+
+POST  http://127.0.0.1:8000/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "user4@gmail.com",
+    "password": "user4@1234"
+}
+
+###
+
+POST  http://127.0.0.1:8000/login/admin HTTP/1.1
+content-type: application/json
+
+{
+    "email": "a8@admin.com",
+    "password": "admin@a8"
+}
+
+###
+
+POST  http://127.0.0.1:8000/login/user HTTP/1.1
+content-type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "user@1234"
+}
+
+##
+
+GET http://127.0.0.1:8000/profile HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODk2NzIzLCJpYXQiOjE3MDc4MDg1MjMsImp0aSI6ImE4OWVhYzZiZmY3MzRiYzFhNjk2OTU0ZDMwZDdmZDcyIiwidXNlcl9pZCI6MTN9.2mnLzibzVdMu3G9uYwUEb1pEff8m7wzEi_5sQxjN8bQ
+
+{
+
+}
+# PUT  http://127.0.0.1:5000/package/update/cd5e37fe-b9f0-4337-bde9-f863bf56a584 HTTP/1.1
+# content-type: application/json
+
+# {
+#     "packageDuration": 10
+    
+# }
+
+# POST http://127.0.0.1:5000/package/add-image/cd5e37fe-b9f0-4337-bde9-f863bf56a584 HTTP/1.1
+# content-type: application/json
+
+# {
+    
+    
+# }
+
+# DELETE http://127.0.0.1:5000/package/delete-image/cd5e37fe-b9f0-4337-bde9-f863bf56a584/c0d525d2-315e-4a7b-a940-a71192e880aa HTTP/1.1
+# content-type: application/json
+
+# {
+    
+    
+# }
